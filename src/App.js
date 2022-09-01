@@ -12,7 +12,7 @@ import Stack from "@mui/material/Stack";
 export default function App() {
   const [data, setData] = useState([]);
   useEffect(() => {
-    fetch("https://finalspaceapi.com/api/v0/character/?limit=12")
+    fetch("https://finalspaceapi.com/api/v0/character/")
       .then((res) => res.json())
       .then((data) => setData(data));
   }, []);
