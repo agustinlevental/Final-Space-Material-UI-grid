@@ -24,7 +24,7 @@ export default function App() {
   }
 
   function isFromEverywhere() {
-    fetch("https://finalspaceapi.com/api/v0/character/?limit=12")
+    fetch("https://finalspaceapi.com/api/v0/character")
       .then((res) => res.json())
       .then((data) => setData(data));
   }
